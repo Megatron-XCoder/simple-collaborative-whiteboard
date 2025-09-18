@@ -32,7 +32,7 @@ function App() {
 
   const joinRoom = async (roomId) => {
     try {
-      const response = await fetch("/api/rooms/join", {
+      const response = await fetch("https://simple-collaborative-whiteboard.onrender.com/api/rooms/join", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
