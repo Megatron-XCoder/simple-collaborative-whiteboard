@@ -10,7 +10,6 @@ const server = http.createServer(app)
 const io = socketIo(server, {
   cors: {
     origin: ['http://localhost:3000', 'https://simple-collaborative-whiteboard.vercel.app'],
-    credentials: true,
     methods: ["GET", "POST"],
   },
 })

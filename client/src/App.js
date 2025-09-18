@@ -11,7 +11,7 @@ function App() {
   const [isConnected, setIsConnected] = useState(false)
 
   useEffect(() => {
-    const newSocket = io("https://simple-collaborative-whiteboard.onrender.com/")
+    const newSocket = io("https://simple-collaborative-whiteboard.onrender.com")
 
     newSocket.on("connect", () => {
       setIsConnected(true)
